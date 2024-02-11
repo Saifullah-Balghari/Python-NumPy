@@ -18,7 +18,7 @@ print(np.random.rand(3, 5))
 
 ### Generating Random Number From An Array...
 
-# choice() : takes an array as a parameter and randomly returns one of the values also we can generate 2-D arrays with the elements of array.
+# choice() : takes an array as a parameter and randomly returns one of it's values, also we can generate arrays with it.
 array1 = np.array([1, 2, 3, 4, 5])
 print(np.random.choice(array1))
 print(np.random.choice(array1, size=(3, 5)))
