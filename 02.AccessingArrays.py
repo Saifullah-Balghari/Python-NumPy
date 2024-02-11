@@ -1,5 +1,6 @@
 import numpy as np
 
+
 """Accessing 1-D array"""
 
 _1d_array = np.array([1, 2, 3])
