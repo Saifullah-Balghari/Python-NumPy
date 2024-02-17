@@ -1,72 +1,72 @@
 import numpy as np
 
-# Array
+## Arrays
 
-# arr1 = np.array([1, 2, 3, 4, 5])
-#
-# arr = [1, 2, 3, 4, 5]
-# arr2 = np.array(arr)
-#
-# print(arr1)          # output: [1 2 3 4 5]
-# print(type(arr1))    # output: <class 'numpy.ndarray'>
-#
-# print(arr2)          # output: [1 2 3 4 5]
-# print(type(arr2))    # output: <class 'numpy.ndarray'>
+array = np.array([1, 2, 3, 4, 5])
+print(array)                # output: [1 2 3 4 5]
+print(type(array))          # output: <class 'numpy.ndarray'>
 
-#  Types Of Arrays
+array = [1, 2, 3, 4, 5]
+array = np.array(array)
+print(array)                # output: [1 2 3 4 5]
+print(type(array))          # output: <class 'numpy.ndarray'>
+
+## Types Of Arrays
 
 # 0-Dimension array
 
-# arr = np.array(42)
-# print(arr)            # output: 42
+_0D_array = np.array(42)
+print(_0D_array)            # output: 42
 
 # 1-Dimension array
-#
-# arr = np.array([1, 2, 3, 4, 5])
-# print(arr)              # output: [1 2 3 4 5]
+
+_1D_array = np.array([1, 2, 3, 4, 5])
+print(_1D_array)            # output: [1 2 3 4 5]
 
 # 2-Dimension array
 
-# arr = np.array([[1, 2, 3], [4, 5, 6], [7, 8, 9]])
-# print(arr)              # output: [[1 2 3]
-#                         #          [4 5 6]
-#                         #          [7 8 9]]
+_2D_array = np.array([[1, 2, 3],
+                  [4, 5, 6],
+                  [7, 8, 9]])
+print(_2D_array)            # output: [[1 2 3]
+                            #          [4 5 6]
+                            #          [7 8 9]]
 
 # 3-Dimension array
 
-# arr = np.array([[[1, 2, 3],
-#                  [4, 5, 6],
-#                  [7, 8, 9]],
-#                 [[1, 2, 3],
-#                  [4, 5, 6],
-#                  [7, 8, 9]]])
-# print(arr)                  # output: [[[1 2 3]
-#                             #           [4 5 6]
-#                             #           [7 8 9]]
-#                             #
-#                             #          [[1 2 3]
-#                             #           [4 5 6]
-#                             #           [7 8 9]]]
-#
+_3D_array = np.array([[[1, 2, 3],
+                 [4, 5, 6],
+                 [7, 8, 9]],
 
-# Checking no of dimensions in an array using ndim attribute.
-
-# a = np.array(42)
-# b = np.array([1, 2, 3, 4, 5])
-# c = np.array([[1, 2, 3], [4, 5, 6]])
-# d = np.array([[[1, 2, 3], [4, 5, 6]], [[1, 2, 3], [4, 5, 6]]])
-#
-# print(a.ndim)       # 0
-# print(b.ndim)       # 1
-# print(c.ndim)       # 2
-# print(d.ndim)       # 3
+                [[1, 2, 3],
+                 [4, 5, 6],
+                 [7, 8, 9]]])
+print(_3D_array)            # output: [[[1 2 3]
+                            #           [4 5 6]
+                            #           [7 8 9]]
+                            
+                            #          [[1 2 3]
+                            #           [4 5 6]
+                            #           [7 8 9]]]
 
 
-# Higher Dimensional Arrays:
-#   An array can have any number of dimensions.
-#    When the array is created, you can define the number of dimensions by using the ndmin argument.
+## Checking no of dimensions in an array using ndim attribute.
 
-# arr = np.array([1, 2, 3, 4], ndmin=5)
-#
-# print(arr)          # output: [[[[[1 2 3 4]]]]]
-# print('number of dimensions :', arr.ndim)         # output: number of dimensions : 5
+_0D_array = np.array(42)
+_1D_array = np.array([1, 2, 3, 4, 5])
+_2D_array = np.array([[1, 2, 3], [4, 5, 6]])
+_3D_array = np.array([[[1, 2, 3], [4, 5, 6]], [[1, 2, 3], [4, 5, 6]]])
+
+print(_0D_array.ndim)       # output: 0
+print(_1D_array.ndim)       # output: 1
+print(_2D_array.ndim)       # output: 2
+print(_3D_array.ndim)       # output: 3
+
+## Higher Dimensional Arrays:
+#  An array can have any number of dimensions.
+#  When the array is created, you can define the number of dimensions by using ndmin argument.
+
+_ND_array = np.array([1, 2, 3, 4], ndmin=5)
+
+print(_ND_array)                                        # output: [[[[[1 2 3 4]]]]]
+print('Number of Dimensions :', _ND_array.ndim)         # output: number of dimensions : 5
